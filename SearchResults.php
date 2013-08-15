@@ -8,7 +8,7 @@ echo json_encode(getData());
      $json['iTotalRecords'] = "150";
      $json['iTotalDisplayRecords'] = "150";
 
-     $file = fopen('storelist.csv', 'r');
+     $file = fopen('https://raw.github.com/anditburns/csvfiles/master/storelist.csv', 'r');
      while (($line = fgetcsv($file)) !== FALSE)
      {
         //$line is an array of the csv elements
